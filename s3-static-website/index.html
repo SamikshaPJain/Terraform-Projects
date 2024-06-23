@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phil's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        section h2 {
+            margin-top: 0;
+            animation: fadeIn 2s ease-in-out;
+            color: #2c3e50;
+        }
+
+        .project, .review {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin-bottom: 1em;
+            animation: slideIn 1s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .project h3, .review h3 {
+            margin-top: 0;
+            color: #e74c3c;
+        }
+
+        .project p, .review p {
+            color: #2c3e50;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2em 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Phil's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="image-container">
+        <img src="https://myterraformbucket170902.s3.amazonaws.com/snoopy.jpeg" alt="Snoopy">
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One</h3>
+            <p>Description of project one.</p>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>Description of project two.</p>
+        </div>
+        <div class="project">
+            <h3>Project Three</h3>
+            <p>Description of project three.</p>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <h3>Review One</h3>
+            <p>Feedback from the first reviewer.</p>
+        </div>
+        <div class="review">
+            <h3>Review Two</h3>
+            <p>Feedback from the second reviewer.</p>
+        </div>
+        <div class="review">
+            <h3>Review Three</h3>
+            <p>Feedback from the third reviewer.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: phil@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Phil's Portfolio</p>
+    </footer>
+</body>
+</html>
+
