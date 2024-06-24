@@ -1,5 +1,5 @@
 module "public_subnet_1" {
-  source                  = "./modules/Subnet"
+  source                  = "./modules/subnet"
   vpc_id                  = aws_vpc.two_tier_vpc.id
   cidr_block              = "10.0.0.0/24"
   availability_zone       = "us-east-1a"
@@ -8,7 +8,7 @@ module "public_subnet_1" {
 }
 
 module "public_subnet_2" {
-  source                  = "./modules/Subnet"
+  source                  = "./modules/subnet"
   vpc_id                  = aws_vpc.two_tier_vpc.id
   cidr_block              = "10.0.1.0/24"
   availability_zone       = "us-east-1b"
@@ -17,7 +17,7 @@ module "public_subnet_2" {
 }
 
 module "public_subnet_3" {
-  source                  = "./modules/Subnet"
+  source                  = "./modules/subnet"
   vpc_id                  = aws_vpc.two_tier_vpc.id
   cidr_block              = "10.0.2.0/24"
   availability_zone       = "us-east-1c"
@@ -26,7 +26,7 @@ module "public_subnet_3" {
 }
 
 module "private_subnet_1" {
-  source            = "./modules/Subnet"
+  source            = "./modules/subnet"
   vpc_id            = aws_vpc.two_tier_vpc.id
   cidr_block        = "10.0.3.0/24"
   availability_zone = "us-east-1a"
@@ -34,7 +34,7 @@ module "private_subnet_1" {
 }
 
 module "private_subnet_2" {
-  source            = "./modules/Subnet"
+  source            = "./modules/subnet"
   vpc_id            = aws_vpc.two_tier_vpc.id
   cidr_block        = "10.0.4.0/24"
   availability_zone = "us-east-1b"
@@ -42,7 +42,7 @@ module "private_subnet_2" {
 }
 
 module "private_subnet_3" {
-  source            = "./modules/Subnet"
+  source            = "./modules/subnet"
   vpc_id            = aws_vpc.two_tier_vpc.id
   cidr_block        = "10.0.5.0/24"
   availability_zone = "us-east-1c"
@@ -50,7 +50,7 @@ module "private_subnet_3" {
 }
 
 module "DB_subnet_1" {
-  source            = "./modules/Subnet"
+  source            = "./modules/subnet"
   vpc_id            = aws_vpc.two_tier_vpc.id
   cidr_block        = "10.0.6.0/24"
   availability_zone = "us-east-1a"
@@ -58,7 +58,7 @@ module "DB_subnet_1" {
 }
 
 module "DB_subnet_2" {
-  source            = "./modules/Subnet"
+  source            = "./modules/subnet"
   vpc_id            = aws_vpc.two_tier_vpc.id
   cidr_block        = "10.0.7.0/24"
   availability_zone = "us-east-1b"
@@ -66,7 +66,7 @@ module "DB_subnet_2" {
 }
 
 module "DB_subnet_3" {
-  source            = "./modules/Subnet"
+  source            = "./modules/subnet"
   vpc_id            = aws_vpc.two_tier_vpc.id
   cidr_block        = "10.0.8.0/24"
   availability_zone = "us-east-1c"
